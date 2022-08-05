@@ -1,10 +1,12 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const bcrypt = require('bcrypt');
 
 //GET /api/users
 router.get('/', (req, res) => {
     //access user model and run .findAll() method
     User.findAll({
+        //exlcude users passwords from the response
         attributes: { exclude: ['password'] }
     })
         .then(dbUserData => res.json(dbUserData))
@@ -18,6 +20,8 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     //access user model and run .findOne() method
     User.findOne({
+
+        //exclude users passwords from the response
         attributes: { exclude: ['password']},
         where: {
             id: req.params.id
@@ -55,6 +59,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     //update an existing user
     User.update(req.body, {
+        individualHooks: true,
         where: {
             id: req.params.id
         }
