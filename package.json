@@ -1,0 +1,26 @@
+{
+  "name": "mvc-blogging-site",
+  "version": "1.0.0",
+  "description": "A CMS-style blog using the MVC paradigm.",
+  "main": "server.js",
+  "start": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BDunham484/MVC-blogging-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BDunham484/MVC-blogging-site/issues"
+  },
+  "homepage": "https://github.com/BDunham484/MVC-blogging-site#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
