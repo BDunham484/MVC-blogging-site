@@ -2,7 +2,9 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
+//POST /
 router.get('/', (req, res) => {
+    //calls the sequelize findAll() method on the Post model to render the homepage
     Post.findAll({
         attributes: [
             'id',
@@ -35,6 +37,11 @@ router.get('/', (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
+});
+
+//   /login
+router.get('/login', (req, res) => {
+    res.render('login');
 });
 
 module.exports = router;
