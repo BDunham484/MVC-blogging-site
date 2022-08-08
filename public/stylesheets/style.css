@@ -61,6 +61,7 @@ input:focus {
 textarea {
     min-width: 40%;
     min-height: 100px;
+    margin-top: 5vh;
 }
 
 form {
