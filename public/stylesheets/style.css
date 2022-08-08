@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #F3F5F6;
+}
+
+a {
+    text-decoration: none;
+    color: #225ca3;
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a:hover {
+    color: rgb(120, 78, 78);
+}
+
+button {
+    background-color: rgb(27, 23, 23);
+    border: 0;
+    padding: 2% 4%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: rgb(120, 78, 78);
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+textarea,
+input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+    margin-top: 5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5CED3;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 60px auto;
+    width: 300px;
+    box-shadow: -5px 5px 5px rgb(95, 93, 93);
+}
+
+form>div {
+    margin-bottom: 2%;
+    /* background-color: antiquewhite; */
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    padding: 20px 0 10px 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 3%;
+    background-color: rgb(27, 23, 23);
+    
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header h1 a {
+    font-style: italic;
+    
+}
+
+#tech {
+    color: #CD533B;
+}
+
+.header-text {
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+}
+
+.btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+}
+
+.delete-post-btn {
+    background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+    background-color: #ff643d;
+}
+
+.post {
+    margin-bottom: 4%;
+    line-height: 150%;
+    /* background-color: #7d7d7d; */
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfcfc+0,c5ced3+100&0+0,1+99 */
+    background: -moz-linear-gradient(top,  rgba(252,252,252,0) 0%, rgba(198,206,211,1) 99%, rgba(197,206,211,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,252,252,0) 0%,rgba(198,206,211,1) 99%,rgba(197,206,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,252,252,0) 0%,rgba(198,206,211,1) 99%,rgba(197,206,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcfcfc', endColorstr='#c5ced3',GradientType=0 ); /* IE6-9 */
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    padding-left: 30px;
+    height: 10vh;
+    padding-top: 1vh;
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+
+.upvote-btn {
+    background-color: #197d0f;
+    transition: background-color .1s;
+}
+
+.upvote-btn:hover {
+    background-color: #1f9c13;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: #fff5eb;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.new-post-form input {
+    width: 300px;
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
