@@ -42,6 +42,7 @@ button:hover {
 .post-list {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 textarea,
@@ -68,7 +69,6 @@ form {
     justify-content: center;
     align-items: center;
     background-color: #C5CED3;
-    /* background-color: #F3F5F6; */
     border: 2px solid black;
     border-radius: 40px;
     margin: 60px auto;
@@ -157,8 +157,19 @@ main {
 }
 
 .post {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     line-height: 150%;
+    /* background-color: #7d7d7d; */
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfcfc+0,c5ced3+100&0+0,1+99 */
+    background: -moz-linear-gradient(top,  rgba(252,252,252,0) 0%, rgba(198,206,211,1) 99%, rgba(197,206,211,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(252,252,252,0) 0%,rgba(198,206,211,1) 99%,rgba(197,206,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(252,252,252,0) 0%,rgba(198,206,211,1) 99%,rgba(197,206,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcfcfc', endColorstr='#c5ced3',GradientType=0 ); /* IE6-9 */
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+    padding-left: 30px;
+    height: 10vh;
+    padding-top: 1vh;
 }
 
 .post .title span {

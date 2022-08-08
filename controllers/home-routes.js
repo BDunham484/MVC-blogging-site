@@ -4,6 +4,7 @@ const { Post, User, Comment } = require('../models');
 
 //POST /
 router.get('/', (req, res) => {
+    console.log(req.session);
     //calls the sequelize findAll() method on the Post model to render the homepage
     Post.findAll({
         attributes: [
@@ -41,6 +42,12 @@ router.get('/', (req, res) => {
 
 //   /login
 router.get('/login', (req, res) => {
+    res.render('login');
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
     res.render('login');
 });
 
