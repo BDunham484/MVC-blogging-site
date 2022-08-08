@@ -42,7 +42,6 @@ router.get('/', (req, res) => {
 
 //   /login
 router.get('/login', (req, res) => {
-    res.render('login');
     if (req.session.loggedIn) {
         res.redirect('/');
         return;
