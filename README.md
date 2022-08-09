@@ -10,6 +10,7 @@ A CMS-style blog using the MVC paradigm.
 * `DB_NAME='kenny_bloggins_db'`
 * `DB_USER='<username>'`
 * `DB_PW='<password>'`
+* If running locally you can seed the db with `npm run seed`
 
 ## Usage
 
