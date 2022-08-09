@@ -1,0 +1,24 @@
+<article>
+    <a href="/"> &larr; Back to Homepage</a>
+    <h2>
+        View Post
+    </h2>
+    <div class="view-post-wrapper">
+        <div class="view-post">
+            <div class="view-post-title">
+                {{post.title}}
+            </div>
+            <div class="view-post-content">
+                {{post.post_content}}
+            </div>
+            <div class="view-post-info">
+                {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
+                |
+                <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+            </div>
+        </div>
+    </div>
+    
+</article>
+
+{{> comments post.comments }}

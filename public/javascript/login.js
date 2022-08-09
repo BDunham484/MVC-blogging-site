@@ -16,7 +16,8 @@ async function loginFormHandler(event) {
 
         if (response.ok) {
             console.log('success');
-            document.location.replace('/dashboard');
+            alert("You're signed in!")
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }
@@ -45,7 +46,8 @@ async function signupFormHandler(event) {
         // check the response status
         if (response.ok) {
             console.log('success');
-            document.location.replace('/dashboard');
+            alert("You're signed in!")
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }

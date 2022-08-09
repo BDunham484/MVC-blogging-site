@@ -62,12 +62,15 @@ input:focus {
 textarea {
     min-width: 40%;
     min-height: 100px;
-    margin-top: 5vh;
 }
 
 #edit-comment {
     min-width: 60%;
     min-height: 130px;
+}
+
+#comment-body {
+    margin-top: 5vh;
 }
 
 form {
@@ -193,10 +196,62 @@ ul {
     padding-top: 1vh;
 }
 
+#post-content {
+    min-width: 80%;
+    min-height: 200px;
+}
+
 .post .title span {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
+}
+
+/* VIEW POST STYLES */
+.view-post {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #c5ced3;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 60px auto;
+    min-width: 300px;
+    /* height: 100%; */
+    min-height: 50vh;
+    box-shadow: -5px 5px 5px rgb(95, 93, 93);
+}
+
+.view-post-wrapper {
+    width: 70%;
+    min-height: 30vh;
+    margin: 0 auto;
+}
+
+.view-post-title {
+    background-color: rgb(27, 23, 23);
+    padding: 30px;
+    color: #cd533b;
+    font-weight: bold;
+    transition: color .1s;
+    width: 100%;
+    border-radius: 38px 38px 0 0;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.view-post-content {
+    background-color: #a7aeb1;
+    margin-top: 1vh;
+    width: 70%;
+    min-height: 40vh;
+    padding: 10px;
+    text-align: left;
+}
+
+.view-post-info {
+    margin: 15px 0;
 }
 
 .edit-link {

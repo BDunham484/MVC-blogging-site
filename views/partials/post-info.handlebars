@@ -1,7 +1,10 @@
 <article class="post">
     <div class="title">
-        <a href="{{post_url}}" target="_blank">{{title}}</a>
-        <span>({{format_url post_url}})</span>
+        {{!-- <a href="{{post_url}}" target="_blank">{{title}}</a>
+        <span>({{format_url post_url}})</span> --}}
+
+        <a href="/view-post/{{id}}">{{title}}</a>
+        {{!-- <span>({{post_content}})</span> --}}
     </div>
     <div class="meta">
         
@@ -9,7 +12,9 @@
         {{format_date created_at}}
         |
         <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-        | <a href="/dashboard/edit/{{id}}">Edit post</a>
+        
+        {{!-- | <a href="/dashboard/edit/{{id}}">Edit post</a> --}}
+        
         
         
     </div>
