@@ -127,8 +127,8 @@ router.delete('/:id', withAuth, (req, res) => {
 });
 
 //POST/LOGIN /api/users/login
-router.post('/login', (req, res) => {
-    User.findOne({
+router.post('/login', async (req, res) => {
+    await User.findOne({
         where: {
             email: req.body.email
         }
