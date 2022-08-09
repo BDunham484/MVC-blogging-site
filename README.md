@@ -12,3 +12,5 @@ A CMS-style blog using the MVC paradigm.
 * `DB_PW='<password>'`
 
 ## Usage
+
+* `npm start`
