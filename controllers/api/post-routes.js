@@ -121,7 +121,8 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 //DELETE api/posts/1
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id',(req, res) => {
+    console.log('id', req.params.id);
     //access post model and run update() method
     Post.destroy({
         where: {

@@ -4,13 +4,13 @@ async function deleteFormHandler(event) {
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
-
+    console.log('before fetch')
     const response = await fetch(`/api/posts/${id}`, {
         method: 'DELETE'
     });
 
     if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/dashboard/');
     } else {
         alert(response.statusText);
     }
