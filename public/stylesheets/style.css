@@ -20,11 +20,11 @@ a {
 }
 
 a:hover {
-    color: #E29C8D;
+    color: #e29c8b;
 }
 
 button {
-    background-color: rgb(27, 23, 23);
+    background-color: #1b1717;
     border: 0;
     padding: 2% 4%;
     color: white;
@@ -36,7 +36,7 @@ button {
 }
 
 button:hover {
-    background-color: #D1654D;
+    background-color: #443232;
 }
 
 .post-list {
@@ -63,6 +63,11 @@ textarea {
     min-width: 40%;
     min-height: 100px;
     margin-top: 5vh;
+}
+
+#edit-comment {
+    min-width: 60%;
+    min-height: 130px;
 }
 
 form {
@@ -210,6 +215,7 @@ ul {
 
 .comment-form {
     margin-bottom: 5%;
+    width: 60%;
 }
 
 .comment {
@@ -218,7 +224,7 @@ ul {
 }
 
 .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #f9d9d2;
 }
 
 .comment .meta {
@@ -247,7 +253,7 @@ ul {
 .edit-post-form input {
     width: 85%;
     margin: 5% 0 2% 0;
-    padding: 1% 0;
+    padding: 1% 0 1% 1%;
 }
 
 footer {
