@@ -14,13 +14,13 @@ html {
 
 a {
     text-decoration: none;
-    color: #225ca3;
+    color: #cd533b;
     font-weight: bold;
     transition: color .1s;
 }
 
 a:hover {
-    color: rgb(120, 78, 78);
+    color: #E29C8D;
 }
 
 button {
@@ -36,13 +36,14 @@ button {
 }
 
 button:hover {
-    background-color: rgb(120, 78, 78);
+    background-color: #D1654D;
 }
 
 .post-list {
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
+    width: 70%;
 }
 
 textarea,
@@ -131,6 +132,21 @@ main {
     padding: 2% 4%;
 }
 
+ul {
+    list-style: none;
+}
+
+.list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    background-color: rgb(27, 23, 23);
+    padding: 10px 0 10px 30px;
+}
+
 .btn-no-style {
     background: none;
     border: none;
@@ -146,11 +162,11 @@ main {
 
 .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #CD533B;
 }
 
 .delete-post-btn {
-    background-color: #d41414;
+    background-color: #f64623;
 }
 
 .delete-post-btn:hover {
@@ -168,8 +184,7 @@ main {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcfcfc', endColorstr='#c5ced3',GradientType=0 ); /* IE6-9 */
     border-radius: 20px;
     border-bottom: 1px solid black;
-    padding-left: 30px;
-    height: 10vh;
+    height: 100px;
     padding-top: 1vh;
 }
 
@@ -212,12 +227,27 @@ main {
     opacity: .6;
 }
 
+.meta {
+    padding-left: 60px;
+}
+
+.new-post-form {
+    width: 60%;
+}
+
 .new-post-form input {
-    width: 300px;
+    width: 80%;
 }
 
 .edit-post-form {
     margin-bottom: 5%;
+    width: 60%;
+}
+
+.edit-post-form input {
+    width: 85%;
+    margin: 5% 0 2% 0;
+    padding: 1% 0;
 }
 
 footer {
