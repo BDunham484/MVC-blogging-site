@@ -322,3 +322,33 @@ footer {
     padding: 1%;
     font-size: 110%;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1800px) {
+    .post-list {
+        width: 50%;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .new-post-form {
+        width: 49%;
+    }
+
+    h2 {
+        margin-left: 10vw;
+    }
+
+    .edit-post-form {
+        width: 49%;
+    }
+
+    .comment-form {
+        width: 49%;
+    }
+}
