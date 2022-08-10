@@ -324,6 +324,53 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1065px) {
+    .post-list {
+        width: 90%;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .new-post-form {
+        width: 90%;
+    }
+
+    .edit-post-form {
+        width: 90%;
+    }
+
+    .comment-form {
+        width: 90%;
+    }
+
+    #comment-body {
+        width: 145%;
+        height: 300px;
+    }
+
+    #post-content {
+        width: 145%;
+        height: 280px;
+    }
+
+    .view-post-wrapper {
+        width: 100%;
+    }
+
+    .view-post {
+        min-height: 75vh;;
+    }
+
+    .view-post-content {
+        width: 90%;
+        min-height: 58vh;
+        margin-top: 4vh;
+    }
+}
 
 @media screen and (min-width: 1800px) {
     .post-list {
