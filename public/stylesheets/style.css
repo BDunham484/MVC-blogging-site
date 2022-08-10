@@ -342,6 +342,10 @@ footer {
     .post {
         min-height: 120px;
     }
+
+    .text {
+        padding: 0 5px 5px 5px;
+    }
 }
 
 
