@@ -337,6 +337,10 @@ footer {
     ul {
         padding: 0;
     }
+
+    .post {
+        min-height: 100px;
+    }
 }
 
 
