@@ -67,6 +67,7 @@ textarea {
 #edit-comment {
     min-width: 60%;
     min-height: 130px;
+    margin-top: 3vh;
 }
 
 #comment-body {
