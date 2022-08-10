@@ -39,6 +39,10 @@ button:hover {
     background-color: #443232;
 }
 
+#logout {
+    margin-left: -1px;
+}
+
 .post-list {
     margin: 0;
     padding: 0;
@@ -116,7 +120,6 @@ header {
     align-items: center;
     padding: 2% 3%;
     background-color: rgb(27, 23, 23);
-    
 }
 
 header h1 {
@@ -261,12 +264,12 @@ ul {
 }
 
 .upvote-btn {
-    background-color: #197d0f;
+    background-color: #f64623;
     transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-    background-color: #1f9c13;
+    background-color: #ff643d;
 }
 
 .comment-form {
