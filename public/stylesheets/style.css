@@ -324,6 +324,22 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+    .title a {
+        font-size: 13px;
+    }
+
+    .meta {
+        font-size: 13px;
+        padding-left: 30px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
+
 @media screen and (max-width: 1065px) {
     .post-list {
         width: 90%;
@@ -337,6 +353,10 @@ footer {
 
     .new-post-form {
         width: 90%;
+    }
+
+    #post-title {
+        width: 145%;
     }
 
     .edit-post-form {
