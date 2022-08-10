@@ -346,6 +346,15 @@ footer {
     .text {
         padding: 0 5px 5px 5px;
     }
+
+    #edit-comment {
+        width: 145%;
+    }
+
+    .edit-post-form input {
+        width: 145%;
+        margin: 13% 0 7% 0;
+    }
 }
 
 
