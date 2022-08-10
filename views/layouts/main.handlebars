@@ -12,14 +12,14 @@
     <div class="wrapper">
         <header>
             <h1>
-                <a href="/" class="header-text">Today's <span id="tech">Tech</span></a>
+                <a href="/" class="header-text" class="refresh">Today's <span id="tech">Tech</span></a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
+                <a href="/dashboard" class="refresh">dashboard</a>
                 <button id="logout" class="btn-no-style">logout</button>
                 {{else}}
-                <a href="/dashboard">dashboard</a>
+                <a href="/dashboard" class="refresh">dashboard</a>
                 <a href="/login" class="header-text">login</a>
                 {{/if}}
             </nav>
@@ -34,6 +34,7 @@
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
+    <script src="/javascript/main-refresh.js"></script>
 </body>
 
 </html>

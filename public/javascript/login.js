@@ -42,14 +42,14 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-
+        
         // check the response status
         if (response.ok) {
             console.log('success');
             alert("You're signed in!")
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert("User already exists.");
         }
     }
 }
