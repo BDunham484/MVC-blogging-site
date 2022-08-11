@@ -12,7 +12,7 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Installation](#local-installation)
 - [Usage](#usage)
 - [Made With](#made-with)
 - [Contributing](#contributing)
