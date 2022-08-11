@@ -1,5 +1,8 @@
+//require express router
 const router = require('express').Router();
+//import the models
 const { User, Post, Vote, Comment } = require('../../models');
+//import authorization function
 const withAuth = require('../../utils/auth'); 
 
 //GET /api/users
@@ -173,5 +176,5 @@ router.post('/logout', (req, res) => {
     }
 });
 
-
+//export router
 module.exports = router;

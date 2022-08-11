@@ -1,6 +1,10 @@
+//require express.js router
 const router = require('express').Router();
+//import sequelize connection to database
 const sequelize = require('../../config/connection');
+//import models
 const { Post, User, Vote, Comment } = require('../../models');
+//import authorization function
 const withAuth = require('../../utils/auth');
 
 
@@ -142,4 +146,6 @@ router.delete('/:id',(req, res) => {
         });
 });
 
+
+//export routes
 module.exports = router;
