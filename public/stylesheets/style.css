@@ -293,7 +293,9 @@ ul {
 }
 
 .meta {
-    padding-left: 60px;
+    padding: 10px 60px 0 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .new-post-form {
