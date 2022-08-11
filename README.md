@@ -20,7 +20,7 @@
 - [Test](#test)
 - [Questions](#questions)
 
-## Installation
+## Local Installation
 
 * Run `npm init -y` from command line
 * run `npm i` to install dependencies
@@ -44,22 +44,23 @@ Back to [top of page](# )
 
 Back to [top of page](# )
 
-## License
+## Made With
 
-* This application is covered under the <a href='https://opensource.org/licenses/MIT'>MIT License</a>.
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express.js
+* Express Handlebars
+* MySQL
+* Sequelize
+* bcrypt
+* connect-session-sequelize
+* express-session
 
-Back to [top of page](# )
-
-
-## Code Contributors
-
-#### Made with ❤️ by:
+### Made with ❤️ by:
 
 * Brad Dunham
-
-
-
-Back to [top of page](# )
 
 ## Contributing
 
@@ -67,19 +68,8 @@ Feel free to submit an issue!
 
 Back to [top of page](# )
 
-## Test
-
-* nah
 
 
 
-Back to [top of page](# )
-
-## Questions?
-
-* If you have any questions you can find me here: <https://www.github.com/BDunham484>
-* You can also reach me here: bdunham484@gmail.com
-
-Back to [top of page](# )
 
     
