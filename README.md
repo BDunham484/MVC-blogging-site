@@ -14,11 +14,9 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Code Contributors](#code-contributors)
+- [Made With](#made-with)
+- [Code Contributors](#made-with-❤️-by)
 - [Contributing](#contributing)
-- [Test](#test)
-- [Questions](#questions)
 
 ## Local Installation
 
@@ -58,7 +56,7 @@ Back to [top of page](# )
 * connect-session-sequelize
 * express-session
 
-### Made with ❤️ by:
+## Made with ❤️ by:
 
 * Brad Dunham
 
