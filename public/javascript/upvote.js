@@ -18,7 +18,7 @@ async function upvoteClickHandler(event) {
     if (response.ok) {
         document.location.reload();
     } else {
-        alert(response.statusText);
+        alert("You can only vote once per post!");
     }
 }
 

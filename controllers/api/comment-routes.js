@@ -1,8 +1,13 @@
+//require express router
 const router = require('express').Router();
+//import comment model
 const { Comment } = require('../../models');
+//import authorization function
 const withAuth = require('../../utils/auth');
 
+//GET api/comments
 router.get('/', (req, res) => {
+    //access comment model and run .findAll() method
     Comment.findAll()
         .then(dbCommentData => res.json(dbCommentData))
         .catch(err => {
@@ -11,9 +16,11 @@ router.get('/', (req, res) => {
         })
 });
 
+//POST api/comments
 router.post('/', withAuth, (req, res) => {
     // check the session
     if (req.session) {
+        //if session access comment model and run .create() method
         Comment.create({
             comment_text: req.body.comment_text,
             post_id: req.body.post_id,
@@ -28,7 +35,9 @@ router.post('/', withAuth, (req, res) => {
     }
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+//DELETE api/comments/1
+router.delete('/:id', withAuth,  (req, res) => {
+    //access comment model and run destroy() method
     Comment.destroy({
         where: {
             id: req.params.id
@@ -47,4 +56,6 @@ router.delete('/:id', withAuth, (req, res) => {
         });
 });
 
+
+//exports routes
 module.exports = router;

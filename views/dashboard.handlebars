@@ -7,8 +7,9 @@
             <input type="text" id="post-title" name="post-title" />
         </div>
         <div>
-            <label for="post-url">Link</label>
-            <input id="post-url" name="post-url" />
+            <label for="post-content">Content</label>
+            <textarea id="post-content" name="post-content"></textarea>
+        
         </div>
         <button type="submit" class="btn">Create</button>
     </form>
@@ -17,14 +18,14 @@
 {{#if posts.length}}
 <section>
     <h2>Your Posts</h2>
-    <ol>
+    <ul>
         {{#each posts as |post|}}
+        | <a href="/dashboard/edit/{{id}}">Edit post</a>
         <li>
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
         </li>
         {{/each}}
-    </ol>
+    </ul>
 </section>
 {{/if}}
 

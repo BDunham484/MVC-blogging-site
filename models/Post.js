@@ -1,6 +1,9 @@
+//import Model class and datatypes methods from sequelize
 const { Model, DataTypes } = require('sequelize');
+//inport database connection
 const sequelize = require('../config/connection');
 
+//create post model
 class Post extends Model {
     static upvote(body, models) {
         return models.Vote.create({
@@ -13,7 +16,7 @@ class Post extends Model {
                 },
                 attributes: [
                     'id',
-                    'post_url',
+                    'post_content',
                     'title',
                     'created_at',
                     [
@@ -26,25 +29,28 @@ class Post extends Model {
     }
 }
 
+
+//define table columns and configurations
 Post.init(
     {
+        //table column definitions
+        //define an id column
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
+        //define title column
         title: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_url: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                isURL: true
-            }
+        //define post_content column
+        post_content: {
+            type: DataTypes.TEXT
         },
+        //define user_id column
         user_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -53,7 +59,9 @@ Post.init(
             }
         }
     },
-    {
+    {   
+        //table configuration options
+        //pass in imported sequelize connection to database.
         sequelize,
         freezeTableName: true,
         underscored: true,
@@ -61,4 +69,5 @@ Post.init(
     }
 );
 
+//export the Post model
 module.exports = Post; 

@@ -1,6 +1,10 @@
+//require express.js router
 const router = require('express').Router();
+//import sequelize connection to database
 const sequelize = require('../../config/connection');
+//import models
 const { Post, User, Vote, Comment } = require('../../models');
+//import authorization function
 const withAuth = require('../../utils/auth');
 
 
@@ -8,7 +12,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', (req, res) => {
     //access post model and run findAll() method
     Post.findAll({
-        attributes: ['id', 'post_url', 'title', 'created_at', [
+        attributes: ['id', 'post_content', 'title', 'created_at', [
             sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count'
         ]],
         order: [sequelize.fn('RAND')],
@@ -41,7 +45,7 @@ router.get('/:id', (req, res) => {
         where: {
             id: req.params.id
         },
-        attributes: ['id', 'post_url', 'title', 'created_at', [
+        attributes: ['id', 'post_content', 'title', 'created_at', [
             sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count'
         ]],
         include: [
@@ -70,7 +74,7 @@ router.post('/', withAuth, (req, res) => {
     //access post model and run create() method
     Post.create({
         title: req.body.title,
-        post_url: req.body.post_url,
+        post_content: req.body.post_content,
         user_id: req.session.user_id
     })
         .then(dbPostData => res.json(dbPostData))
@@ -121,7 +125,8 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 //DELETE api/posts/1
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id',(req, res) => {
+    console.log('id', req.params.id);
     //access post model and run update() method
     Post.destroy({
         where: {
@@ -141,4 +146,6 @@ router.delete('/:id', withAuth, (req, res) => {
         });
 });
 
+
+//export routes
 module.exports = router;

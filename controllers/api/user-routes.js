@@ -1,5 +1,8 @@
+//require express router
 const router = require('express').Router();
+//import the models
 const { User, Post, Vote, Comment } = require('../../models');
+//import authorization function
 const withAuth = require('../../utils/auth'); 
 
 //GET /api/users
@@ -29,7 +32,7 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Post,
-                attributes: ['id', 'title', 'post_url', 'created_at']
+                attributes: ['id', 'title', 'post_content', 'created_at']
             },
             {
                 model: Comment,
@@ -61,7 +64,7 @@ router.get('/:id', (req, res) => {
 });
 
 //POST /api/users
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     //create a new user
     User.create({
         username: req.body.username,
@@ -158,7 +161,7 @@ router.post('/login', (req, res) => {
 
             res.json({ user: dbUserData, message: 'You are now logged in!' });
         });
-    });
+    })
 });
 
 // DELETE api/users/logout
@@ -173,5 +176,5 @@ router.post('/logout', (req, res) => {
     }
 });
 
-
+//export router
 module.exports = router;

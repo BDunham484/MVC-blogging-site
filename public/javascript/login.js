@@ -6,7 +6,7 @@ async function loginFormHandler(event) {
 
     if (email && password) {
         const response = await fetch('/api/users/login', {
-            method: 'post',
+            method: 'POST',
             body: JSON.stringify({
                 email,
                 password
@@ -16,7 +16,8 @@ async function loginFormHandler(event) {
 
         if (response.ok) {
             console.log('success');
-            document.location.replace('/dashboard');
+            alert("You're signed in!")
+            document.location.replace('/');
         } else {
             alert(response.statusText);
         }
@@ -41,13 +42,14 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
-
+        
         // check the response status
         if (response.ok) {
             console.log('success');
+            alert("You're signed in!")
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert("User already exists.");
         }
     }
 }
