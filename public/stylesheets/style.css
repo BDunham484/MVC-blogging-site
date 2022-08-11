@@ -335,6 +335,7 @@ footer {
         font-size: 13px;
         padding-left: 30px;
         margin-top: 5px;
+        justify-content: center;
     }
 
     ul {
