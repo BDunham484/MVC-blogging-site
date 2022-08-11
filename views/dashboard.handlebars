@@ -1,3 +1,4 @@
+{{!-- handlebars html page info for the dashboard dispaly --}}
 <section>
     <h2>Create New Post</h2>
 
@@ -14,11 +15,12 @@
         <button type="submit" class="btn">Create</button>
     </form>
 </section>
-
+{{!-- handlebars if statement to display posts if the array is populated --}}
 {{#if posts.length}}
 <section>
     <h2>Your Posts</h2>
     <ul>
+        {{!-- handlebars "for loop" to iterate through array of posts--}}
         {{#each posts as |post|}}
         | <a href="/dashboard/edit/{{id}}">Edit post</a>
         <li>

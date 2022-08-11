@@ -1,6 +1,8 @@
+{{!-- main html page --}}
 <!DOCTYPE html>
 <html lang="en">
 
+{{!-- header meta-data --}}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
+{{!-- html body seen on every page --}}
 <body>
     <div class="wrapper">
         <header>
@@ -25,12 +28,14 @@
             </nav>
         </header>
         <main>
+            {{!-- handlebars call to insert page partials depending on which page a user is on --}}
             {{{ body }}}
         </main>
         <footer>
             Thanks for visiting!
         </footer>
     </div>
+    {{!-- handlebars call to import js files depending on if the user is loggedIn or not --}}
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}

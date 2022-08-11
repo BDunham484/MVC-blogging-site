@@ -1,5 +1,7 @@
+{{!-- handlebars html page info for the homepage dispaly --}}
 <div class="list-wrapper">
     <ul class="post-list">
+        {{!-- handlebars 'for loop' to iterate through posts array --}}
     {{#each posts as |post|}}
     <li>
         {{> post-info post }}

@@ -1,5 +1,7 @@
+{{!-- handlebars html page info for the single post/add comment  dispaly --}}
+{{!-- handlepars partial call passing post info --}}
 {{> post-info post}}
-
+{{!-- handleabrs conditional to display data if loggedIn --}}
 {{#if loggedIn}}
 <form class="comment-form">
     <div>
@@ -12,8 +14,9 @@
     </div>
 </form>
 {{/if}}
+{{!-- handlebars partial call passing post.comments data in --}}
 {{> comments post.comments }}
-
+{{!-- handlebars conditional to import js scripts if loggedIn --}}
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 <script src="/javascript/upvote.js"></script>

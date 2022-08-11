@@ -1,10 +1,14 @@
+{{!-- handlebars html partial to display comments --}}
 <div class="comments">
+    {{!-- handlebars "for-loop" to loop through array of comments to display --}}
     {{#each this}}
     <section class="comment">
         <div class="meta">
+            {{!-- imported data --}}
             {{user.username}} on {{format_date created_at}}
         </div>
         <div class="text">
+            {{!-- imported data --}}
             {{comment_text}}
         </div>
     </section>

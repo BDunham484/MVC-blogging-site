@@ -1,3 +1,4 @@
+{{!-- handlebars html page info for the dashboard dispaly --}}
 <article>
     
     <h2>
@@ -6,6 +7,7 @@
     <div class="view-post-wrapper">
         <div class="view-post">
             <div class="view-post-title">
+                {{!-- imports data --}}
                 {{post.title}}
             </div>
             <div class="view-post-content">
@@ -20,7 +22,7 @@
     </div>
     
 </article>
-
+{{!-- handlebars partial call passing post.comments data in --}}
 {{> comments post.comments }}
 
 

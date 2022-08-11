@@ -1,3 +1,4 @@
+//helper functions to format the date into a more readable format and pluralize certain words
 module.exports = {
     format_date: date => {
         return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(
@@ -10,17 +11,5 @@ module.exports = {
         }
 
         return word;
-    },
-    // get_url: () => {
-        
-    //     // if (url === 'dashboard') {
-    //     //     return true;
-    //     // }
-    //     // return url
-    //     //     .replace('http://', '')
-    //     //     .replace('https://', '')
-    //     //     .replace('www.', '')
-    //     //     .split('/')[0]
-    //     //     .split('?')[0];
-    // },
+    }
 }

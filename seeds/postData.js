@@ -1,5 +1,7 @@
+//import post mmodel
 const { Post } = require('../models');
 
+//array of data to populate posts
 const postData = [
     {
         title: "Why is My Excel CONCATENATE Not Working? Here’s How to Fix It",
@@ -34,6 +36,8 @@ const postData = [
 
 ]
 
+//function to bulk create the post data array
 const seedPost = () => Post.bulkCreate(postData);
 
+//export function to index.js
 module.exports = seedPost;
