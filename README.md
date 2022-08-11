@@ -15,7 +15,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Made With](#made-with)
-- [Code Contributors](#made-with-❤️-by)
+- [Code Contributors](#made-with-)
 - [Contributing](#contributing)
 
 ## Local Installation
@@ -23,8 +23,7 @@
 * Run `npm init -y` from command line
 * run `npm i` to install dependencies
 * Create a .env file in the root folder
-* In the .env file
-*  enter your MySQL login credentials in the following format:
+* In the .env file, enter your MySQL login credentials in the following format:
 * `DB_NAME='kenny_bloggins_db'`
 * `DB_USER='<username>'`
 * `DB_PW='<password>'`
@@ -64,7 +63,7 @@ Back to [top of page](# )
 
 Feel free to submit an issue!
 
-Back to [top of page](# )
+Back to [top of page](#MVC-blogging-site )
 
 
 
