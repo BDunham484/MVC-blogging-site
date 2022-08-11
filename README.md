@@ -15,7 +15,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Made With](#made-with)
-- [Code Contributors](#made-with-)
 - [Contributing](#contributing)
 
 ## Local Installation
@@ -63,7 +62,7 @@ Back to [top of page](# )
 
 Feel free to submit an issue!
 
-Back to [top of page](#MVC-blogging-site )
+Back to [top of page](# )
 
 
 
