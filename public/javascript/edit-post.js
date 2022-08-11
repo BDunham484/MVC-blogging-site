@@ -1,3 +1,5 @@
+//function that runs when form submit button is clicked in edit-post.handlebars
+//if updates post title's based off a unique id via post-routes
 async function editFormHandler(event) {
     event.preventDefault();
 

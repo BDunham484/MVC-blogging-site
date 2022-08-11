@@ -1,3 +1,5 @@
+//function that runs when form submit btn is clicked in login-form in login-handlebars
+//it takes user input and posts it via user-routes.js
 async function loginFormHandler(event) {
     event.preventDefault();
 
@@ -25,6 +27,8 @@ async function loginFormHandler(event) {
 }
 
 
+//function that runs when form submit btn is clicked in signup-form in login-handlebars
+//it takes user input and posts it via user-routes.js
 async function signupFormHandler(event) {
     event.preventDefault();
 

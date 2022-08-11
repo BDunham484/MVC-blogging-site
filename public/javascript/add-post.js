@@ -1,4 +1,5 @@
-
+//function that runs when the submit button is clicked on dashboard.handlebars
+//it captures user input and posts data via post-routes
 async function newFormHandler(event) {
     event.preventDefault();
 

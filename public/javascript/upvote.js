@@ -1,3 +1,5 @@
+//function that runs when like button is clicked in single-post.handlebars
+//posts via post-routes.js
 async function upvoteClickHandler(event) {
     event.preventDefault();
 
@@ -22,4 +24,4 @@ async function upvoteClickHandler(event) {
     }
 }
 
-document.querySelector('.upvote-btn').addEventListener('click', upvoteClickHandler);
+document.querySelector('.like-btn').addEventListener('click', upvoteClickHandler);

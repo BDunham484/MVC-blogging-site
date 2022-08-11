@@ -1,3 +1,5 @@
+//function that runs when delete button is clicked in edit-post.handlevars
+//it deletes a specific post based on it's unique id via post-routes.js
 async function deleteFormHandler(event) {
     event.preventDefault();
 

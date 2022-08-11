@@ -1,3 +1,5 @@
+//function that runs when form submit btn is clicked in edit-post.handlebars
+//it takes user input and posts it via comment-routes.js
 async function commentFormHandler(event) {
     event.preventDefault();
 

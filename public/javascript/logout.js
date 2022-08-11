@@ -1,3 +1,5 @@
+//function that runs when #logout button is clikced in main.handlebars
+//posts via user.routes.js
 async function logout() {
     const response = await fetch('/api/users/logout', {
         method: 'post',

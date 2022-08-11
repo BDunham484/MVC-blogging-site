@@ -263,12 +263,12 @@ ul {
     margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
+.like-btn {
     background-color: #f64623;
     transition: background-color .1s;
 }
 
-.upvote-btn:hover {
+.like-btn:hover {
     background-color: #ff643d;
 }
 
@@ -335,7 +335,6 @@ footer {
         font-size: 13px;
         padding: 0 0 0 30px;
         margin-top: 5px;
-        /* justify-content: center; */
         display: block;
     }
 
