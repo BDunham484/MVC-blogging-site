@@ -333,7 +333,7 @@ footer {
 
     .meta {
         font-size: 13px;
-        padding-left: 30px;
+        padding: 0 0 0 30px;
         margin-top: 5px;
         /* justify-content: center; */
         display: block;
