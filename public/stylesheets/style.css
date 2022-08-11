@@ -1,3 +1,4 @@
+/* GLOBAL/UNIVERSAL STYLES START */
 * {
     box-sizing: border-box;
 }
@@ -39,15 +40,30 @@ button:hover {
     background-color: #443232;
 }
 
-#logout {
-    margin-left: -1px;
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5CED3;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 60px auto;
+    width: 300px;
+    box-shadow: -5px 5px 5px rgb(95, 93, 93);
 }
 
-.post-list {
-    margin: 0;
-    padding: 0;
-    /* list-style: none; */
-    width: 70%;
+form>div {
+    margin-bottom: 2%;
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    padding: 20px 0 10px 0;
 }
 
 textarea,
@@ -67,43 +83,9 @@ textarea {
     min-width: 40%;
     min-height: 100px;
 }
+/* GLOBAL/UNIVERSAL STYLES END */
 
-#edit-comment {
-    min-width: 60%;
-    min-height: 130px;
-    margin-top: 3vh;
-}
-
-#comment-body {
-    margin-top: 5vh;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #C5CED3;
-    border: 2px solid black;
-    border-radius: 40px;
-    margin: 60px auto;
-    width: 300px;
-    box-shadow: -5px 5px 5px rgb(95, 93, 93);
-}
-
-form>div {
-    margin-bottom: 2%;
-    /* background-color: antiquewhite; */
-    min-width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form label {
-    display: block;
-    padding: 20px 0 10px 0;
-}
+/* HEADER STYLES START */
 
 .wrapper {
     width: 100%;
@@ -111,6 +93,10 @@ form label {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#logout {
+    margin-left: -1px;
 }
 
 header {
@@ -139,26 +125,6 @@ header h1 a {
     color: white;
 }
 
-main {
-    flex: 1;
-    padding: 2% 4%;
-}
-
-ul {
-    list-style: none;
-}
-
-.list-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title {
-    background-color: rgb(27, 23, 23);
-    padding: 10px 0 10px 30px;
-}
-
 .btn-no-style {
     background: none;
     border: none;
@@ -177,18 +143,35 @@ ul {
     color: #CD533B;
 }
 
-.delete-post-btn {
-    background-color: #f64623;
+/* HEADER STYLES END */
+
+/* MAIN STYLES START */
+main {
+    flex: 1;
+    padding: 2% 4%;
 }
 
-.delete-post-btn:hover {
-    background-color: #ff643d;
+ul {
+    list-style: none;
 }
 
+.list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+/* MAIN STYLES END */
+
+/* LIST-ITEM STYLES START */
 .post {
     margin-bottom: 4%;
     line-height: 150%;
-    /* background-color: #7d7d7d; */
    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfcfc+0,c5ced3+100&0+0,1+99 */
     background: -moz-linear-gradient(top,  rgba(252,252,252,0) 0%, rgba(198,206,211,1) 99%, rgba(197,206,211,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(252,252,252,0) 0%,rgba(198,206,211,1) 99%,rgba(197,206,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -200,18 +183,36 @@ ul {
     padding-top: 1vh;
 }
 
-#post-content {
-    min-width: 80%;
-    min-height: 200px;
+.title {
+    background-color: rgb(27, 23, 23);
+    padding: 10px 0 10px 30px;
 }
 
-.post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
+.meta {
+    padding: 10px 60px 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+/* LIST-ITEM STYLES END */
+
+/* DASHBOARD STYLES START */
+.new-post-form {
+    width: 60%;
 }
 
-/* VIEW POST STYLES */
+.new-post-form input {
+    width: 80%;
+}
+/* DASHBOARD STYLES END */
+
+/* VIEW-POST STYLES START */
+
+.view-post-wrapper {
+    width: 70%;
+    min-height: 30vh;
+    margin: 0 auto;
+}
+
 .view-post {
     display: flex;
     flex-direction: column;
@@ -222,15 +223,8 @@ ul {
     border-radius: 40px;
     margin: 60px auto;
     min-width: 300px;
-    /* height: 100%; */
     min-height: 50vh;
     box-shadow: -5px 5px 5px rgb(95, 93, 93);
-}
-
-.view-post-wrapper {
-    width: 70%;
-    min-height: 30vh;
-    margin: 0 auto;
 }
 
 .view-post-title {
@@ -258,20 +252,9 @@ ul {
     margin: 15px 0;
 }
 
-.edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-}
+/* VIEW-POST STYLES END */
 
-.like-btn {
-    background-color: #f64623;
-    transition: background-color .1s;
-}
-
-.like-btn:hover {
-    background-color: #ff643d;
-}
-
+/* COMMENTS STYLES START */
 .comment-form {
     margin-bottom: 5%;
     width: 60%;
@@ -292,20 +275,21 @@ ul {
     opacity: .6;
 }
 
-.meta {
-    padding: 10px 60px 0 60px;
-    display: flex;
-    justify-content: space-between;
+#comment-body {
+    margin-top: 5vh;
 }
 
-.new-post-form {
-    width: 60%;
+.like-btn {
+    background-color: #f64623;
+    transition: background-color .1s;
 }
 
-.new-post-form input {
-    width: 80%;
+.like-btn:hover {
+    background-color: #ff643d;
 }
+/* COMMENTS STYLES END */
 
+/* EDIT POST STYLES START */
 .edit-post-form {
     margin-bottom: 5%;
     width: 60%;
@@ -317,6 +301,37 @@ ul {
     padding: 1% 0 1% 1%;
 }
 
+#edit-comment {
+    min-width: 60%;
+    min-height: 130px;
+    margin-top: 3vh;
+}
+
+#post-content {
+    min-width: 80%;
+    min-height: 200px;
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+}
+
+.delete-post-btn {
+    background-color: #f64623;
+}
+
+.delete-post-btn:hover {
+    background-color: #ff643d;
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+/* EDIT POST SYTLES END */
+
 footer {
     border-top: 1px solid #ccc;
     display: flex;
@@ -325,7 +340,11 @@ footer {
     font-size: 110%;
 }
 
+
+
+
 /* MEDIA QUERIES */
+/* MEDIA QUERIES FOR SCREENS 800PX WIDE AND SMALLER */
 @media screen and (max-width: 800px) {
     .title a {
         font-size: 13px;
@@ -360,7 +379,7 @@ footer {
     }
 }
 
-
+/* MEDIA QUERIES FOR SCREEN WIDTHS OF 1065 AND SMALLER */
 @media screen and (max-width: 1065px) {
     .post-list {
         width: 90%;
@@ -413,6 +432,7 @@ footer {
     }
 }
 
+/* MEDIA QUERIES FOR SCREEN WIDTHS 1800PX AND HIGHER */
 @media screen and (min-width: 1800px) {
     .post-list {
         width: 50%;
